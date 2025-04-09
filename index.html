@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="جرعتك اليومية العشوائية">
+    <meta property="og:description" content="اكتشف محتوى جديدًا كل يوم - معلومات، اقتباسات وتحديات">
+    <title>جرعتك اليومية العشوائية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="theme-toggle">🌓</div>
+    <div class="container">
+        <header>
+            <h1 class="animate__animated animate__fadeInDown">جرعتك اليومية 🎁</h1>
+            <div class="content-types">
+                <button class="type-btn active" data-type="all">الكل</button>
+                <button class="type-btn" data-type="fact">معلومات</button>
+                <button class="type-btn" data-type="quote">اقتباسات</button>
+                <button class="type-btn" data-type="challenge">تحديات</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="content-card animate__animated animate__fadeIn">
+                <div class="loader hidden"></div>
+                <div class="content-display" id="content">
+                    <p>مرحبًا! اضغط على الزر أدناه لتحصل على جرعتك اليومية.</p>
+                </div>
+                <div class="content-meta hidden">
+                    <span class="content-type-badge" id="contentType"></span>
+                    <span class="content-date" id="contentDate"></span>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="generateBtn" class="primary-btn">
+                    <span>اكتشف اليوم</span>
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M13.5 2v4h5.5l-8 8 8 8h-5.5v4l-12-10z"/></svg>
+                </button>
+                <div class="secondary-actions hidden" id="shareActions">
+                    <button id="shareBtn" class="secondary-btn">شارك</button>
+                    <button id="saveBtn" class="secondary-btn">حفظ</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>تم التطوير باستخدام ❤️</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
